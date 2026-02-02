@@ -418,6 +418,7 @@ class OverlaidTracks(AbstractComponent):
       ylabel_template: str = '{name}:{strand}',
       ylabel_horizontal: bool = True,
       shared_y_scale: bool = False,
+      global_ylims: tuple[float, float] | None = None,
       alpha: float = 0.8,
       order_tdata_by_mean: bool = True,
       max_num_tracks: int = 50,
@@ -433,7 +434,9 @@ class OverlaidTracks(AbstractComponent):
       track_height: The height of each track.
       ylabel_template: A template for the y-axis labels.
       ylabel_horizontal: Whether to make the y-axis labels horizontal.
-      shared_y_scale: Whether to use the same y-axis scale for all tracks.
+      shared_y_scale: Whether to use the same y-axis scale for all tracks. This
+        is inferred from the min/max data values across all tracks.
+      global_ylims: Optional global y-axis limits (min and max).
       alpha: The transparency of the tracks.
       order_tdata_by_mean: Whether to order the tracks by their mean value (in
         descending order).
@@ -457,6 +460,7 @@ class OverlaidTracks(AbstractComponent):
     self._ylabel_template = ylabel_template
     self._ylabel_horizontal = ylabel_horizontal
     self._shared_y_scale = shared_y_scale
+    self._global_ylims = global_ylims
     self._alpha = alpha
     self._order_tdata_by_mean = order_tdata_by_mean
     self._kwargs = kwargs
@@ -571,7 +575,9 @@ class OverlaidTracks(AbstractComponent):
       )
       arr = tdata.values[:, axis_index]
 
-      if self._shared_y_scale:
+      if self._global_ylims is not None:
+        ax.set_ylim(self._global_ylims)
+      elif self._shared_y_scale:
         ax.set_ylim(self._vmin, self._vmax)
 
       # Plot the two tracks on the same axis. We plot the larger values first so
