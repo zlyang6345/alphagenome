@@ -130,22 +130,33 @@ def unpack_proto(
   Returns:
     NumPy array of the unpacked data.
   """
+  dtype = _TENSOR_DTYPE_TO_NUMPY_DTYPE[proto.data_type]
   match proto.WhichOneof('payload'):
     case 'array':
       data = _decompress_bytes(proto.array.data, proto.array.compression_type)
+      array = np.frombuffer(data, dtype=dtype).reshape(proto.shape)
     case 'chunk_count':
-      data = b''.join([
-          _decompress_bytes(chunk.data, chunk.compression_type)
-          for chunk in chunks
-      ])
+      array = np.empty(np.prod(proto.shape) * dtype.itemsize, dtype=np.uint8)
+      bytes_received = 0
+      for chunk in chunks:
+        chunk_data = np.frombuffer(
+            _decompress_bytes(chunk.data, chunk.compression_type),
+            dtype=np.uint8,
+        )
+        array[bytes_received : bytes_received + chunk_data.nbytes] = chunk_data
+        bytes_received += chunk_data.nbytes
+
+      if bytes_received != array.nbytes:
+        raise ValueError(
+            f'Expected {array.nbytes} bytes but only received {bytes_received} '
+            'bytes.'
+        )
+      array = array.view(dtype).reshape(proto.shape)
     case _:
       raise ValueError(
           f'Unsupported payload type: {proto.WhichOneof("payload")}'
       )
 
-  array = np.frombuffer(
-      data, dtype=_TENSOR_DTYPE_TO_NUMPY_DTYPE[proto.data_type]
-  ).reshape(proto.shape)
   return array
 
 

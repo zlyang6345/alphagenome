@@ -99,8 +99,14 @@ def unpack_tensor_benchmark_chunks(state):
       compression_type=compression_type,
   )
 
+  tracemalloc.start()
+
   while state:
     tensor_utils.unpack_proto(packed, chunks)
+
+  _, peak_mem = tracemalloc.get_traced_memory()
+  tracemalloc.stop()
+  state.counters['peak_mem'] = google_benchmark.Counter(peak_mem)
 
 
 if __name__ == '__main__':

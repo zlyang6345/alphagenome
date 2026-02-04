@@ -164,7 +164,7 @@ class TensorUtilsTest(parameterized.TestCase):
     )
     self.assertLen(chunks, tensor.chunk_count)
     round_trip = tensor_utils.unpack_proto(tensor, chunks)
-    np.testing.assert_array_equal(array, round_trip)
+    np.testing.assert_array_equal(round_trip, array)
 
   def test_pack_proto_invalid_chunk_size_raises(self):
     with self.assertRaisesRegex(
@@ -180,7 +180,7 @@ class TensorUtilsTest(parameterized.TestCase):
     )
     chunks = chunks[::2]
     with self.assertRaisesWithLiteralMatch(
-        ValueError, 'cannot reshape array of size 64 into shape (128,)'
+        ValueError, 'Expected 512 bytes but only received 256 bytes.'
     ):
       tensor_utils.unpack_proto(tensor, chunks)
 
