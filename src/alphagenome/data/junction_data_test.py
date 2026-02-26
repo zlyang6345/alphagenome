@@ -223,6 +223,12 @@ class JunctionDataTest(parameterized.TestCase):
               genome.Junction('chr2', 10, 11, '+', k=5),
           ],
       ),
+      dict(
+          name='unknown_track_name',
+          k_threshold=None,
+          strand='+',
+          expected=[],
+      ),
   ])
   def test_get_junctions_to_plot(self, name, k_threshold, strand, expected):
     metadata = pd.DataFrame({

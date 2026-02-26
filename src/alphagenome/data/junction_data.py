@@ -244,10 +244,14 @@ def get_junctions_to_plot(
     raise ValueError(
         f'Expected only one ontology term, got {filtered.num_tracks}.'
     )
+  filtered_junctions = []
+  if filtered.values.size == 0:
+    return filtered_junctions
+
   if k_threshold is None:
     k_threshold = filtered.values.max() * 0.05
+
   # Round k for better visualization.
-  filtered_junctions = []
   for interval, k in zip(filtered.junctions, filtered.values, strict=True):
     # Filter by threshold and strand.
     if interval.strand != strand:
