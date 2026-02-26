@@ -14,6 +14,8 @@
 
 from absl.testing import absltest
 from absl.testing import parameterized
+from alphagenome.data import genome
+from alphagenome.data import junction_data
 from alphagenome.data import ontology
 from alphagenome.data import track_data
 from alphagenome.models import dna_output
@@ -102,6 +104,25 @@ def _create_track_data(
   )
 
 
+def _create_splice_junctions():
+  metadata = pd.DataFrame({
+      'name': ['foo', 'bar'],
+      'ontology_curie': ['UBERON:0000005', 'UBERON:0000006'],
+  })
+  junctions = np.array([
+      genome.Interval('chr1', 10, 11, '+'),
+      genome.Interval('chr1', 10, 11, '-'),
+  ])
+  return junction_data.JunctionData(
+      junctions,
+      np.zeros(
+          (len(junctions), len(metadata)),
+          dtype=np.float32,
+      ),
+      metadata,
+  )
+
+
 def _get_output(sequence_length: int = 10):
   return dna_output.Output(
       atac=_create_track_data(sequence_length, _ATAC_METADATA),
@@ -112,7 +133,7 @@ def _get_output(sequence_length: int = 10):
       chip_tf=None,
       splice_sites=None,
       splice_site_usage=None,
-      splice_junctions=None,
+      splice_junctions=_create_splice_junctions(),
       contact_maps=None,
   )
 
@@ -247,6 +268,14 @@ class OutputTest(parameterized.TestCase):
 
     self.assertIsNone(filtered_output.get(dna_output.OutputType.CONTACT_MAPS))
 
+    splice_junction_output = filtered_output.get(
+        dna_output.OutputType.SPLICE_JUNCTIONS
+    )
+    self.assertIsInstance(splice_junction_output, junction_data.JunctionData)
+    np.testing.assert_array_equal(
+        splice_junction_output.possible_strands, ['+']
+    )
+
   def test_filter_to_strand_minus(self):
     filtered_output = self.output.filter_to_strand('-')
 
@@ -267,6 +296,14 @@ class OutputTest(parameterized.TestCase):
     self.assertEqual(rna_seq_output.num_tracks, 1)
 
     self.assertIsNone(filtered_output.get(dna_output.OutputType.CONTACT_MAPS))
+
+    splice_junction_output = filtered_output.get(
+        dna_output.OutputType.SPLICE_JUNCTIONS
+    )
+    self.assertIsInstance(splice_junction_output, junction_data.JunctionData)
+    np.testing.assert_array_equal(
+        splice_junction_output.possible_strands, ['-']
+    )
 
   def test_filter_to_strand_unstranded(self):
     filtered_output = self.output.filter_to_strand('.')
@@ -294,6 +331,12 @@ class OutputTest(parameterized.TestCase):
     rna_seq_output = filtered_output.get(dna_output.OutputType.RNA_SEQ)
     self.assertIsNotNone(rna_seq_output)
     self.assertEqual(rna_seq_output.num_tracks, 2)
+
+    splice_junction_output = filtered_output.get(
+        dna_output.OutputType.SPLICE_JUNCTIONS
+    )
+    self.assertIsInstance(splice_junction_output, junction_data.JunctionData)
+    np.testing.assert_array_equal(splice_junction_output.possible_strands, [])
 
     self.assertIsNone(filtered_output.get(dna_output.OutputType.CONTACT_MAPS))
 

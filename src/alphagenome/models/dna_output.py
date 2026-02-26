@@ -192,7 +192,13 @@ class Output:
       del output_type  # Unused.
       return tdata.filter_tracks(tdata.strands == strand)
 
-    return self.map_track_data(_filter_to_strand)
+    output = self.map_track_data(_filter_to_strand)
+    if output.splice_junctions is not None:
+      output = dataclasses.replace(
+          output,
+          splice_junctions=output.splice_junctions.filter_to_strand(strand),
+      )
+    return output
 
   def filter_ontology_terms(
       self, ontology_terms: Iterable[ontology.OntologyTerm]
