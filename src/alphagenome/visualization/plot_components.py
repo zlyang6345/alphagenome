@@ -176,16 +176,18 @@ def plot(
     axes_to_annotate_idx = (
         range(1, len(axes)) if add_label_axis else range(len(axes))
     )
-    for i, annotation in enumerate(annotations):
-      for j in axes_to_annotate_idx:
-        if not annotation.is_variant and j in transcript_axes_idx:
+    label_index = 0
+    for annotation in annotations:
+      for annotate_index in axes_to_annotate_idx:
+        if not annotation.is_variant and annotate_index in transcript_axes_idx:
           # Do not add interval annotations to axes that involves transcripts.
           continue
-        annotation.plot_ax(axes[j], interval, hspace)
+        annotation.plot_ax(axes[annotate_index], interval, hspace)
       if annotation.has_labels:
         # Add labels to the empty axis at the top. All labels are added to
         # the top axis, in the order they are supplied in annotations list.
-        annotation.plot_labels(axes[0], interval, height_offsets[i])
+        annotation.plot_labels(axes[0], interval, height_offsets[label_index])
+        label_index += 1
 
   # Enable default tick locator for the final subplot.
   axes[-1].xaxis.set_major_locator(matplotlib.ticker.AutoLocator())

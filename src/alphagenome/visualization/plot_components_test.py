@@ -230,7 +230,10 @@ class PlotComponentsTest(parameterized.TestCase):
                 colors='darkgray',
             ),
             plot_components.VariantAnnotation(
-                annotated_variants, use_default_labels=True, colors='purple'
+                annotated_variants, use_default_labels=False, colors='purple'
+            ),
+            plot_components.VariantAnnotation(
+                annotated_variants, use_default_labels=True, colors='orange'
             ),
         ],
     )
