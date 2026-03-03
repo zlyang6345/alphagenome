@@ -6,6 +6,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.6.1]
+
+### Changed
+
+-   Speed up seqlogo plotting 100x.
+-   Filter splice junctions when calling `filter_by_strand` of model Output
+    dataclass. Previously only tracks would be correctly filtered.
+-   When plotting junctions, don't calculate k-threshold if there are no
+    junctions to plot.
+
+### Fixed
+
+-   `IndexError` when plotting annotations with no labels.
+-   `KeyError` when tidying variant scores with no values.
+
 ## [0.6.0]
 
 ### Added
