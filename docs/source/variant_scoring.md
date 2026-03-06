@@ -256,3 +256,6 @@ We provide recommended active allele scorers for the following modalities:
 
 For more on the types of variant scorers and how they work, visit the
 [API documentation](api/models.md#variant-scorers).
+
+For a hands-on tutorial on scoring variants on their splicing effect, see the
+[splicing variant scoring notebook](colabs/splicing_variant_scoring).

@@ -9,6 +9,7 @@
 ../colabs/tissue_ontology_mapping
 ../colabs/batch_variant_scoring
 ../colabs/example_analysis_workflow
+../colabs/splicing_variant_scoring
 ```
 
 <!-- mdformat off(Turn off mdformat to retain grid card syntax.) -->
@@ -50,6 +51,13 @@ Tool for scoring many variants at once.
 :link-type: doc
 
 Example analysis of TAL1 locus.
+:::
+
+:::{grid-item-card} Splicing variant scoring
+:link: ../colabs/splicing_variant_scoring
+:link-type: doc
+
+Scoring variants on their splicing effect.
 :::
 
 <!-- mdformat on -->

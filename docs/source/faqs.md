@@ -236,6 +236,31 @@ legibility.
 
 ## Variant scoring
 
+### How to score splicing variants
+
+We recommend combining the three splicing-related variant scorers from
+AlphaGenome into a single score as described in the paper:
+
+*   **Splice sites**: Quantifies changes in splice site class assignment
+    probabilities (donor, acceptor) between `ALT` and `REF` alleles.
+*   **Splice site usage**: Quantifies changes in the relative usage of splice
+    sites between `ALT` and `REF` alleles.
+*   **Splice junctions**: Quantifies log-fold changes in the predicted splice
+    junction counts between `ALT` and `REF` alleles.
+
+For each scorer, the effect is aggregated across all tissues and genes by taking
+the maximum absolute score across all tracks and genes. The merged splicing
+score is then computed as:
+
+{math}`\text{alphagenome\_splicing} = \max(\text{splice\_sites}) +
+\max(\text{splice\_site\_usage}) + \max(\text{splice\_junctions}) / 5`
+
+This is the approach used in the AlphaGenome paper to score ClinVar variants for
+missplicing. This is the recommended method to assess whether a variant causes
+aberrant splicing. See the
+[splicing variant scoring notebook](colabs/splicing_variant_scoring) for a
+step-by-step tutorial.
+
 ### How do I define a variant?
 
 By creating a {class}`~alphagenome.data.genome.Variant` object.
@@ -272,7 +297,9 @@ which walks through how to define a {class}`~alphagenome.data.genome.Variant`
 object and perform inference. Batch inference over many variants can be
 performed using the
 [batch variant scoring notebook](colabs/batch_variant_scoring) which takes a
-variant call file (VCF) as input.
+variant call file (VCF) as input. For scoring variants specifically on their
+splicing effect, see the
+[splicing variant scoring notebook](colabs/splicing_variant_scoring).
 
 ### Can I pass any sequence to {class}`~alphagenome.data.genome.Variant.reference_bases` or does it have to match the reference genome sequence at the variant location?
 
