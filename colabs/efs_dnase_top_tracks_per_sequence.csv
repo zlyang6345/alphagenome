@@ -1,0 +1,101 @@
+name,strand,Assay title,ontology_curie,biosample_name,biosample_type,biosample_life_stage,data_source,endedness,genetically_modified,nonzero_mean,track_index,sequence_name,mean_accessibility,max_accessibility
+UBERON:0001875 DNase-seq,.,DNase-seq,UBERON:0001875,globus pallidus,tissue,adult,encode,paired,False,0.6928175687789917,248,MM-EFS-1,0.17324403,9.0625
+UBERON:0000988 DNase-seq,.,DNase-seq,UBERON:0000988,pons,tissue,adult,encode,paired,False,0.4579213261604309,225,MM-EFS-1,0.12799777,6.59375
+EFO:0005720 DNase-seq,.,DNase-seq,EFO:0005720,SK-MEL-5,cell_line,adult,encode,paired,False,0.6427146196365356,173,MM-EFS-1,0.11034272,10.1875
+UBERON:0001874 DNase-seq,.,DNase-seq,UBERON:0001874,putamen,tissue,adult,encode,paired,False,1.0092743635177612,247,MM-EFS-1,0.10693799,6.9375
+CL:2000045 DNase-seq,.,DNase-seq,CL:2000045,foreskin melanocyte,primary_cell,newborn,encode,single,False,1.6665078401565552,93,MM-EFS-1,0.09826476,10.625
+UBERON:0002626 DNase-seq,.,DNase-seq,UBERON:0002626,head of caudate nucleus,tissue,adult,encode,paired,False,0.10091119259595871,274,MM-EFS-1,0.08674037,14.5625
+UBERON:0002740 DNase-seq,.,DNase-seq,UBERON:0002740,posterior cingulate gyrus,tissue,adult,encode,paired,False,0.3267453908920288,275,MM-EFS-1,0.0852341,13.375
+UBERON:0009834 DNase-seq,.,DNase-seq,UBERON:0009834,dorsolateral prefrontal cortex,tissue,adult,encode,paired,False,0.20427392423152924,292,MM-EFS-1,0.07560645,9.125
+UBERON:0001954 DNase-seq,.,DNase-seq,UBERON:0001954,Ammon's horn,tissue,adult,encode,paired,False,0.5017354488372803,249,MM-EFS-1,0.064873815,6.59375
+EFO:0002793 DNase-seq,.,DNase-seq,EFO:0002793,HL-60,cell_line,adult,encode,paired,False,0.4432883858680725,143,MM-EFS-1,0.060217034,17.75
+EFO:0005720 DNase-seq,.,DNase-seq,EFO:0005720,SK-MEL-5,cell_line,adult,encode,paired,False,0.6427146196365356,173,MM-EFS-10,0.113777414,8.6875
+CL:2000045 DNase-seq,.,DNase-seq,CL:2000045,foreskin melanocyte,primary_cell,newborn,encode,single,False,1.6665078401565552,93,MM-EFS-10,0.102522396,9.4375
+CL:0002038 DNase-seq,.,DNase-seq,CL:0002038,T follicular helper cell,primary_cell,adult,encode,paired,False,4.746370315551758,45,MM-EFS-10,0.05086153,30.125
+EFO:0002793 DNase-seq,.,DNase-seq,EFO:0002793,HL-60,cell_line,adult,encode,paired,False,0.4432883858680725,143,MM-EFS-10,0.050814494,14.875
+CL:0002061 DNase-seq,.,DNase-seq,CL:0002061,T-helper 9 cell,primary_cell,adult,encode,paired,False,2.6681625843048096,46,MM-EFS-10,0.05074457,27.375
+UBERON:0008953 DNase-seq,.,DNase-seq,UBERON:0008953,lower lobe of left lung,tissue,adult,encode,paired,False,0.6039119958877563,290,MM-EFS-10,0.049622227,4.5
+CL:0000913 DNase-seq,.,DNase-seq,CL:0000913,"effector memory CD8-positive, alpha-beta T cell",primary_cell,adult,encode,paired,False,0.5821823477745056,40,MM-EFS-10,0.047659367,14.3125
+CL:0000623 DNase-seq,.,DNase-seq,CL:0000623,natural killer cell,primary_cell,adult,encode,paired,False,1.329219102859497,17,MM-EFS-10,0.047142856,11.6875
+CL:0000897 DNase-seq,.,DNase-seq,CL:0000897,"CD4-positive, alpha-beta memory T cell",primary_cell,adult,encode,paired,False,3.524648904800415,33,MM-EFS-10,0.045470886,14.0625
+CL:0000905 DNase-seq,.,DNase-seq,CL:0000905,"effector memory CD4-positive, alpha-beta T cell",primary_cell,adult,encode,paired,False,1.3759067058563232,37,MM-EFS-10,0.04514824,16.625
+EFO:0005720 DNase-seq,.,DNase-seq,EFO:0005720,SK-MEL-5,cell_line,adult,encode,paired,False,0.6427146196365356,173,MM-EFS-2,0.1767642,12.0625
+CL:2000045 DNase-seq,.,DNase-seq,CL:2000045,foreskin melanocyte,primary_cell,newborn,encode,single,False,1.6665078401565552,93,MM-EFS-2,0.1587947,12.0
+UBERON:0001875 DNase-seq,.,DNase-seq,UBERON:0001875,globus pallidus,tissue,adult,encode,paired,False,0.6928175687789917,248,MM-EFS-2,0.046068862,4.25
+UBERON:0000988 DNase-seq,.,DNase-seq,UBERON:0000988,pons,tissue,adult,encode,paired,False,0.4579213261604309,225,MM-EFS-2,0.044329524,3.6875
+UBERON:0008953 DNase-seq,.,DNase-seq,UBERON:0008953,lower lobe of left lung,tissue,adult,encode,paired,False,0.6039119958877563,290,MM-EFS-2,0.043619033,3.515625
+EFO:0002793 DNase-seq,.,DNase-seq,EFO:0002793,HL-60,cell_line,adult,encode,paired,False,0.4432883858680725,143,MM-EFS-2,0.042218857,12.4375
+CL:0000913 DNase-seq,.,DNase-seq,CL:0000913,"effector memory CD8-positive, alpha-beta T cell",primary_cell,adult,encode,paired,False,0.5821823477745056,40,MM-EFS-2,0.039057467,11.6875
+CL:0000623 DNase-seq,.,DNase-seq,CL:0000623,natural killer cell,primary_cell,adult,encode,paired,False,1.329219102859497,17,MM-EFS-2,0.039042182,9.625
+CL:0002061 DNase-seq,.,DNase-seq,CL:0002061,T-helper 9 cell,primary_cell,adult,encode,paired,False,2.6681625843048096,46,MM-EFS-2,0.03886129,22.0
+CL:0002038 DNase-seq,.,DNase-seq,CL:0002038,T follicular helper cell,primary_cell,adult,encode,paired,False,4.746370315551758,45,MM-EFS-2,0.037826464,23.625
+UBERON:0001875 DNase-seq,.,DNase-seq,UBERON:0001875,globus pallidus,tissue,adult,encode,paired,False,0.6928175687789917,248,MM-EFS-3,0.093018055,6.46875
+EFO:0005720 DNase-seq,.,DNase-seq,EFO:0005720,SK-MEL-5,cell_line,adult,encode,paired,False,0.6427146196365356,173,MM-EFS-3,0.0775028,8.6875
+UBERON:0000988 DNase-seq,.,DNase-seq,UBERON:0000988,pons,tissue,adult,encode,paired,False,0.4579213261604309,225,MM-EFS-3,0.07586424,5.0
+CL:2000045 DNase-seq,.,DNase-seq,CL:2000045,foreskin melanocyte,primary_cell,newborn,encode,single,False,1.6665078401565552,93,MM-EFS-3,0.0731866,8.6875
+UBERON:0001874 DNase-seq,.,DNase-seq,UBERON:0001874,putamen,tissue,adult,encode,paired,False,1.0092743635177612,247,MM-EFS-3,0.060408965,4.875
+UBERON:0002740 DNase-seq,.,DNase-seq,UBERON:0002740,posterior cingulate gyrus,tissue,adult,encode,paired,False,0.3267453908920288,275,MM-EFS-3,0.05974344,10.625
+EFO:0002793 DNase-seq,.,DNase-seq,EFO:0002793,HL-60,cell_line,adult,encode,paired,False,0.4432883858680725,143,MM-EFS-3,0.057221547,16.375
+CL:0002038 DNase-seq,.,DNase-seq,CL:0002038,T follicular helper cell,primary_cell,adult,encode,paired,False,4.746370315551758,45,MM-EFS-3,0.056272477,34.5
+CL:0002061 DNase-seq,.,DNase-seq,CL:0002061,T-helper 9 cell,primary_cell,adult,encode,paired,False,2.6681625843048096,46,MM-EFS-3,0.05615694,30.25
+UBERON:0002626 DNase-seq,.,DNase-seq,UBERON:0002626,head of caudate nucleus,tissue,adult,encode,paired,False,0.10091119259595871,274,MM-EFS-3,0.055603422,11.3125
+UBERON:0001875 DNase-seq,.,DNase-seq,UBERON:0001875,globus pallidus,tissue,adult,encode,paired,False,0.6928175687789917,248,MM-EFS-4,0.10053754,5.71875
+EFO:0005720 DNase-seq,.,DNase-seq,EFO:0005720,SK-MEL-5,cell_line,adult,encode,paired,False,0.6427146196365356,173,MM-EFS-4,0.09471208,9.3125
+CL:2000045 DNase-seq,.,DNase-seq,CL:2000045,foreskin melanocyte,primary_cell,newborn,encode,single,False,1.6665078401565552,93,MM-EFS-4,0.08914693,9.4375
+UBERON:0000988 DNase-seq,.,DNase-seq,UBERON:0000988,pons,tissue,adult,encode,paired,False,0.4579213261604309,225,MM-EFS-4,0.084578626,4.5
+UBERON:0001874 DNase-seq,.,DNase-seq,UBERON:0001874,putamen,tissue,adult,encode,paired,False,1.0092743635177612,247,MM-EFS-4,0.05945253,3.90625
+UBERON:0002626 DNase-seq,.,DNase-seq,UBERON:0002626,head of caudate nucleus,tissue,adult,encode,paired,False,0.10091119259595871,274,MM-EFS-4,0.044846788,7.59375
+UBERON:0002740 DNase-seq,.,DNase-seq,UBERON:0002740,posterior cingulate gyrus,tissue,adult,encode,paired,False,0.3267453908920288,275,MM-EFS-4,0.04443934,6.9375
+UBERON:0009834 DNase-seq,.,DNase-seq,UBERON:0009834,dorsolateral prefrontal cortex,tissue,adult,encode,paired,False,0.20427392423152924,292,MM-EFS-4,0.04106714,4.78125
+UBERON:0001954 DNase-seq,.,DNase-seq,UBERON:0001954,Ammon's horn,tissue,adult,encode,paired,False,0.5017354488372803,249,MM-EFS-4,0.03810711,3.5
+EFO:0002793 DNase-seq,.,DNase-seq,EFO:0002793,HL-60,cell_line,adult,encode,paired,False,0.4432883858680725,143,MM-EFS-4,0.037563886,10.9375
+EFO:0005720 DNase-seq,.,DNase-seq,EFO:0005720,SK-MEL-5,cell_line,adult,encode,paired,False,0.6427146196365356,173,MM-EFS-5,0.32687312,23.875
+CL:2000045 DNase-seq,.,DNase-seq,CL:2000045,foreskin melanocyte,primary_cell,newborn,encode,single,False,1.6665078401565552,93,MM-EFS-5,0.2651293,17.375
+UBERON:0001875 DNase-seq,.,DNase-seq,UBERON:0001875,globus pallidus,tissue,adult,encode,paired,False,0.6928175687789917,248,MM-EFS-5,0.15675054,9.75
+UBERON:0000988 DNase-seq,.,DNase-seq,UBERON:0000988,pons,tissue,adult,encode,paired,False,0.4579213261604309,225,MM-EFS-5,0.1275637,7.0
+EFO:0001187 DNase-seq,.,DNase-seq,EFO:0001187,HepG2,cell_line,child,encode,paired,False,0.5917545557022095,109,MM-EFS-5,0.094899625,9.6875
+UBERON:0001874 DNase-seq,.,DNase-seq,UBERON:0001874,putamen,tissue,adult,encode,paired,False,1.0092743635177612,247,MM-EFS-5,0.090825774,7.46875
+EFO:0002140 DNase-seq,.,DNase-seq,EFO:0002140,COLO829,cell_line,adult,encode,single,False,1.0428472757339478,124,MM-EFS-5,0.075759165,4.84375
+UBERON:0002626 DNase-seq,.,DNase-seq,UBERON:0002626,head of caudate nucleus,tissue,adult,encode,paired,False,0.10091119259595871,274,MM-EFS-5,0.0754774,16.125
+UBERON:0002740 DNase-seq,.,DNase-seq,UBERON:0002740,posterior cingulate gyrus,tissue,adult,encode,paired,False,0.3267453908920288,275,MM-EFS-5,0.072749004,14.625
+UBERON:0009834 DNase-seq,.,DNase-seq,UBERON:0009834,dorsolateral prefrontal cortex,tissue,adult,encode,paired,False,0.20427392423152924,292,MM-EFS-5,0.06489584,10.125
+EFO:0005720 DNase-seq,.,DNase-seq,EFO:0005720,SK-MEL-5,cell_line,adult,encode,paired,False,0.6427146196365356,173,MM-EFS-6,0.07909271,7.09375
+CL:2000045 DNase-seq,.,DNase-seq,CL:2000045,foreskin melanocyte,primary_cell,newborn,encode,single,False,1.6665078401565552,93,MM-EFS-6,0.068087436,7.125
+UBERON:0008953 DNase-seq,.,DNase-seq,UBERON:0008953,lower lobe of left lung,tissue,adult,encode,paired,False,0.6039119958877563,290,MM-EFS-6,0.039348066,3.03125
+EFO:0002793 DNase-seq,.,DNase-seq,EFO:0002793,HL-60,cell_line,adult,encode,paired,False,0.4432883858680725,143,MM-EFS-6,0.036422644,10.0625
+CL:0002061 DNase-seq,.,DNase-seq,CL:0002061,T-helper 9 cell,primary_cell,adult,encode,paired,False,2.6681625843048096,46,MM-EFS-6,0.03397953,18.5
+CL:0000913 DNase-seq,.,DNase-seq,CL:0000913,"effector memory CD8-positive, alpha-beta T cell",primary_cell,adult,encode,paired,False,0.5821823477745056,40,MM-EFS-6,0.03348912,9.5
+EFO:0001221 DNase-seq,.,DNase-seq,EFO:0001221,NCI-H929,cell_line,adult,encode,paired,False,0.6527357697486877,114,MM-EFS-6,0.033290662,11.6875
+CL:0002038 DNase-seq,.,DNase-seq,CL:0002038,T follicular helper cell,primary_cell,adult,encode,paired,False,4.746370315551758,45,MM-EFS-6,0.032765556,18.875
+UBERON:0002168 DNase-seq,.,DNase-seq,UBERON:0002168,left lung,tissue,adult,encode,paired,False,0.9140506386756897,265,MM-EFS-6,0.03270462,2.6875
+CL:0000623 DNase-seq,.,DNase-seq,CL:0000623,natural killer cell,primary_cell,adult,encode,paired,False,1.329219102859497,17,MM-EFS-6,0.03233993,7.6875
+EFO:0005720 DNase-seq,.,DNase-seq,EFO:0005720,SK-MEL-5,cell_line,adult,encode,paired,False,0.6427146196365356,173,MM-EFS-7,0.120334566,10.0625
+CL:2000045 DNase-seq,.,DNase-seq,CL:2000045,foreskin melanocyte,primary_cell,newborn,encode,single,False,1.6665078401565552,93,MM-EFS-7,0.09199398,9.625
+EFO:0001187 DNase-seq,.,DNase-seq,EFO:0001187,HepG2,cell_line,child,encode,paired,False,0.5917545557022095,109,MM-EFS-7,0.049679644,6.6875
+EFO:0002793 DNase-seq,.,DNase-seq,EFO:0002793,HL-60,cell_line,adult,encode,paired,False,0.4432883858680725,143,MM-EFS-7,0.042564854,11.375
+CL:0000623 DNase-seq,.,DNase-seq,CL:0000623,natural killer cell,primary_cell,adult,encode,paired,False,1.329219102859497,17,MM-EFS-7,0.036594987,8.5625
+CL:0000913 DNase-seq,.,DNase-seq,CL:0000913,"effector memory CD8-positive, alpha-beta T cell",primary_cell,adult,encode,paired,False,0.5821823477745056,40,MM-EFS-7,0.036156893,10.3125
+UBERON:0008953 DNase-seq,.,DNase-seq,UBERON:0008953,lower lobe of left lung,tissue,adult,encode,paired,False,0.6039119958877563,290,MM-EFS-7,0.036077462,3.15625
+CL:0002061 DNase-seq,.,DNase-seq,CL:0002061,T-helper 9 cell,primary_cell,adult,encode,paired,False,2.6681625843048096,46,MM-EFS-7,0.035485964,19.625
+CL:0002038 DNase-seq,.,DNase-seq,CL:0002038,T follicular helper cell,primary_cell,adult,encode,paired,False,4.746370315551758,45,MM-EFS-7,0.03517489,20.875
+UBERON:0000988 DNase-seq,.,DNase-seq,UBERON:0000988,pons,tissue,adult,encode,paired,False,0.4579213261604309,225,MM-EFS-7,0.03439395,2.984375
+EFO:0005720 DNase-seq,.,DNase-seq,EFO:0005720,SK-MEL-5,cell_line,adult,encode,paired,False,0.6427146196365356,173,MM-EFS-8,0.098099515,8.6875
+CL:2000045 DNase-seq,.,DNase-seq,CL:2000045,foreskin melanocyte,primary_cell,newborn,encode,single,False,1.6665078401565552,93,MM-EFS-8,0.08720507,9.0625
+UBERON:0001875 DNase-seq,.,DNase-seq,UBERON:0001875,globus pallidus,tissue,adult,encode,paired,False,0.6928175687789917,248,MM-EFS-8,0.055157334,4.28125
+UBERON:0000988 DNase-seq,.,DNase-seq,UBERON:0000988,pons,tissue,adult,encode,paired,False,0.4579213261604309,225,MM-EFS-8,0.050713383,3.6875
+UBERON:0008953 DNase-seq,.,DNase-seq,UBERON:0008953,lower lobe of left lung,tissue,adult,encode,paired,False,0.6039119958877563,290,MM-EFS-8,0.044534557,3.3125
+EFO:0002793 DNase-seq,.,DNase-seq,EFO:0002793,HL-60,cell_line,adult,encode,paired,False,0.4432883858680725,143,MM-EFS-8,0.043899618,12.25
+CL:0002061 DNase-seq,.,DNase-seq,CL:0002061,T-helper 9 cell,primary_cell,adult,encode,paired,False,2.6681625843048096,46,MM-EFS-8,0.039456047,21.75
+UBERON:0002740 DNase-seq,.,DNase-seq,UBERON:0002740,posterior cingulate gyrus,tissue,adult,encode,paired,False,0.3267453908920288,275,MM-EFS-8,0.03940963,6.9375
+CL:0000623 DNase-seq,.,DNase-seq,CL:0000623,natural killer cell,primary_cell,adult,encode,paired,False,1.329219102859497,17,MM-EFS-8,0.03842158,9.3125
+CL:0002038 DNase-seq,.,DNase-seq,CL:0002038,T follicular helper cell,primary_cell,adult,encode,paired,False,4.746370315551758,45,MM-EFS-8,0.038388696,23.25
+EFO:0005720 DNase-seq,.,DNase-seq,EFO:0005720,SK-MEL-5,cell_line,adult,encode,paired,False,0.6427146196365356,173,MM-EFS-9,0.3040765,21.0
+CL:2000045 DNase-seq,.,DNase-seq,CL:2000045,foreskin melanocyte,primary_cell,newborn,encode,single,False,1.6665078401565552,93,MM-EFS-9,0.25927344,17.875
+UBERON:0001875 DNase-seq,.,DNase-seq,UBERON:0001875,globus pallidus,tissue,adult,encode,paired,False,0.6928175687789917,248,MM-EFS-9,0.07157374,5.25
+UBERON:0000988 DNase-seq,.,DNase-seq,UBERON:0000988,pons,tissue,adult,encode,paired,False,0.4579213261604309,225,MM-EFS-9,0.06670002,4.40625
+EFO:0002140 DNase-seq,.,DNase-seq,EFO:0002140,COLO829,cell_line,adult,encode,single,False,1.0428472757339478,124,MM-EFS-9,0.05699684,4.75
+EFO:0002713 DNase-seq,.,DNase-seq,EFO:0002713,Panc1,cell_line,adult,encode,single,False,2.7078969478607178,134,MM-EFS-9,0.041674428,6.28125
+UBERON:0001874 DNase-seq,.,DNase-seq,UBERON:0001874,putamen,tissue,adult,encode,paired,False,1.0092743635177612,247,MM-EFS-9,0.041502837,3.671875
+UBERON:0002740 DNase-seq,.,DNase-seq,UBERON:0002740,posterior cingulate gyrus,tissue,adult,encode,paired,False,0.3267453908920288,275,MM-EFS-9,0.041302904,8.125
+UBERON:0008953 DNase-seq,.,DNase-seq,UBERON:0008953,lower lobe of left lung,tissue,adult,encode,paired,False,0.6039119958877563,290,MM-EFS-9,0.041138772,3.625
+EFO:0002819 DNase-seq,.,DNase-seq,EFO:0002819,Calu3,cell_line,adult,encode,paired,False,0.8454360961914062,145,MM-EFS-9,0.04110266,12.9375
